@@ -163,7 +163,7 @@ def insertEnderecos(logradouro, numero, complemento, municipio, bairro, uf, cep,
 def app(quantidade_consultas):
     conexao = Database()
     contador = 1
-    arq = open("listacnpj.txt")
+    arq = open("listacnpj2.txt")
     linhas = arq.readlines()
 
     for linha in linhas:
@@ -361,7 +361,4 @@ def obter_dados_empresa(cnpj):
         print("Erro ao Tentar Consumir a API")
 
 
-app(quantidade_consultas=1000)
-
-
-
+app(quantidade_consultas=100000000)
